@@ -35,6 +35,16 @@ class Fleur
         }
     }
 
+    void estAdulte()
+    {
+        If (this.nombrePetales >= 3 && this.taille >= 10)
+        {
+            return false;
+        }else{
+            return true;
+        }
+    }
+
     void tomber(){}
 }
 
@@ -47,6 +57,8 @@ int main()
     int petalesRestants=0;
     petalesRestants=30-fleur.nombrePetales;
     std::cout << 'Nombre de pétales restants : ' << petalesRestants << std::endl;
+
+    estAdulte();
 
     return 0;
 }
