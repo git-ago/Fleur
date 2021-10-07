@@ -1,3 +1,5 @@
+#include <iostream>
+
 class Fleur
 {
     public:
@@ -14,7 +16,20 @@ class Fleur
     float poids;
     string identifiant;
     int nombrePetales;
+
+    // Méthodes
+    void afficher()
+    {
+        std::cout << fleur.taille << std::endl;
+        std::cout << fleur.poids << std::endl;
+        std::cout << fleur.identifiant << std::endl;
+        std::cout << fleur.nombrePetales << std::endl;
+    }
+
+    void tomber(){}
+
 }
+
 
 int main()
 {
