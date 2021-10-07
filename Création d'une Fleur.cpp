@@ -45,6 +45,16 @@ class Fleur
         }
     }
 
+    void pousse(float grow)
+    {
+        if (grow<0)
+        {
+            return;
+        }else{
+            this.taille += grow;
+        }
+    }
+
     void tomber(){}
 }
 
@@ -59,6 +69,8 @@ int main()
     std::cout << 'Nombre de pétales restants : ' << petalesRestants << std::endl;
 
     estAdulte();
+
+    pousse(10.0f);
 
     return 0;
 }
