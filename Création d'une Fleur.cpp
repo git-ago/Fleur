@@ -15,3 +15,10 @@ class Fleur
     string identifiant;
     int nombrePetales;
 }
+
+int main()
+{
+    // Création d’un objet Fleur
+   Fleur fleur(2.3f, 10.0f, 'Hibiscus', 30);
+    return 0;
+}
