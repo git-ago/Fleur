@@ -26,8 +26,16 @@ class Fleur
         std::cout << fleur.nombrePetales << std::endl;
     }
 
-    void tomber(){}
+    void perdUnePetale()
+    {
+        this.nombrePetales = this.nombrePetales-1;
+        if (this.nombrePetales<0)
+        {
+            this.nombrePetales=0;
+        }
+    }
 
+    void tomber(){}
 }
 
 
@@ -35,5 +43,10 @@ int main()
 {
     // Création d’un objet Fleur
    Fleur fleur(2.3f, 10.0f, 'Hibiscus', 30);
+
+    int petalesRestants=0;
+    petalesRestants=30-fleur.nombrePetales;
+    std::cout << 'Nombre de pétales restants : ' << petalesRestants << std::endl;
+
     return 0;
 }
