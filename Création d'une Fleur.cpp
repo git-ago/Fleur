@@ -9,4 +9,9 @@ class Fleur
         identifiant = inIdentifiant;
         nombrePetales = inNombrePetales;
     }
+    // Attributs
+    float taille;
+    float poids;
+    string identifiant;
+    int nombrePetales;
 }
